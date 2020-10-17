@@ -1,9 +1,3 @@
-%%
-% 
-% * R08323020 陳霖
-% * R08323021 陸馨
-% 
-
 
 %% Q1
 beta = 0.95;
@@ -86,34 +80,34 @@ end
 y = 0:30;
 
 %% Time Series of Capital
-plot(y,k_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('k') %y軸座標描述
+plot(y,k_vector,'-*b'); 
+set(gca,'XTick',[0:1:30])
+xlabel('time') 
+ylabel('k') 
 title('Time Series of Capital')
 saveas(gcf,'k.png')
 
 %% Time Series of Consumption
-plot(y,c_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('c') %y軸座標描述
+plot(y,c_vector,'-*b');
+set(gca,'XTick',[0:1:30]) 
+xlabel('time') 
+ylabel('c') 
 title('Time Series of Consumption')
 saveas(gcf,'c.png')
 
 %% Time Series of Output
-plot(y,output_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('c') %y軸座標描述
+plot(y,output_vector,'-*b');
+set(gca,'XTick',[0:1:30]) 
+xlabel('time')  
+ylabel('c') 
 title('Time Series of Output')
 saveas(gcf,'output.png')
 
 %% Time Series of Investment
-plot(y,investment_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('c') %y軸座標描述
+plot(y,investment_vector,'-*b'); 
+set(gca,'XTick',[0:1:30]) 
+xlabel('time')  
+ylabel('c') 
 title('Time Series of Investment')
 saveas(gcf,'investment.png')
 
@@ -181,34 +175,34 @@ end
 y = 0:30;
 
 %% Time Series of Capital (theta = 0.1)
-plot(y,k_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('k') %y軸座標描述
+plot(y,k_vector,'-*b'); 
+set(gca,'XTick',[0:1:30])
+xlabel('time')  
+ylabel('k')
 title('Time Series of Capital (theta = 0.1)')
 saveas(gcf,'k_5.png')
 
 %% Time Series of Consumption (theta = 0.1)
-plot(y,c_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('c') %y軸座標描述
+plot(y,c_vector,'-*b'); 
+set(gca,'XTick',[0:1:30])
+xlabel('time') 
+ylabel('c') 
 title('Time Series of Consumption (theta = 0.1)')
 saveas(gcf,'c_5.png')
 
 %% Time Series of Output (theta = 0.1)
-plot(y,output_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('c') %y軸座標描述
+plot(y,output_vector,'-*b'); 
+set(gca,'XTick',[0:1:30]) 
+xlabel('time')  
+ylabel('c') 
 title('Time Series of Output (theta = 0.1)')
 saveas(gcf,'output_5.png')
 
 
 %% Time Series of Investment (theta = 0.1)
-plot(y,investment_vector,'-*b'); %線性，顏色，標記
-set(gca,'XTick',[0:1:30]) %x軸範圍1-6，間隔1
-xlabel('time')  %x軸座標描述
-ylabel('c') %y軸座標描述
+plot(y,investment_vector,'-*b'); 
+set(gca,'XTick',[0:1:30]) 
+xlabel('time')  
+ylabel('c') 
 title('Time Series of Investment (theta = 0.1)')
 saveas(gcf,'investment_5.png')
